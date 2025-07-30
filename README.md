@@ -1,2 +1,3 @@
 # whether-app
-<img width="571" height="166" alt="image" src="https://github.com/user-attachments/assets/1f22071b-3c1c-4b3c-96d0-af77ebee6cd2" />
+
+<img width="1824" height="857" alt="image" src="https://github.com/user-attachments/assets/b26e18d0-680c-42d0-a620-ef187cdac413" />
