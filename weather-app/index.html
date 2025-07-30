@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Weather App</title>
+	<link rel="stylesheet" href="loaderStyle.css">
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<div class="ALL">
+	<div class="menu">
+		<div class="menu__window">
+			<div class="menu__search">
+				<input type="text" class="menu__input" />
+				<div class="menu__close-icon">
+					<i class="fa-solid fa-xmark"></i>
+				</div>
+				<button class="menu__send">
+					<i class="fa-solid fa-square-arrow-up-right"></i>
+				</button>
+				<label class="switch">
+					<input checked="true" id="checkbox" type="checkbox" />
+					<span class="slider">
+						<div class="star star_1"></div>
+						<div class="star star_2"></div>
+						<div class="star star_3"></div>
+						<svg viewBox="0 0 16 16" class="cloud_1 cloud2">
+							<path transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="#fff"
+								d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925">
+							</path>
+						</svg>
+					</span>
+				</label>
+			</div>
+			<ul class="menu__history">
+				<li class="menu__items"><i class="fa-solid fa-location-dot"></i>Minsk <i
+						class="fa-solid fa-link link"></i></li>
+				<li class="menu__items"><i class="fa-solid fa-location-dot"></i>Moscow <i
+						class="fa-solid fa-link link"></i></li>
+			</ul>
+		</div>
+		<div class="menu__window">
+			<li class="menu__items"><i class="fa-solid fa-link"></i>Minsk <i class="fa-solid fa-link-slash unlink"></i>
+			</li>
+		</div>
+	</div>
+	<div class="weather">
+		<div class="weather__main">
+			<div class="weather__current">
+				<div class="weather__weather-info">
+					<div class="weather__search-icon"><i class="fa-solid fa-magnifying-glass"></i>
+					</div>
+					<h2 class="weather__title">Minsk</h2>
+					<div class="weather__info">
+						<div class="weather__icon"><i
+								class="fa-solid fa-cloud-showers-heavy weather__cloud-showers-heavy"></i>
+						</div>
+						<p class="weather__temp">+15°</p>
+					</div>
+				</div>
+				<!-- <div class="weather__more-info"> -->
+				<div class="weather__wind-info">
+					<div class="weather__info-item"><i class="fa-solid fa-wind"></i>скорость ветра : 3 м/с</div>
+					<div class="weather__info-item"><i class="fa-regular fa-compass" style="transform: rotate(-45deg);"></i>направление ветра : с-з</div>
+					<div class="weather__info-item"><i class="fa-solid fa-droplet"></i>влажность : 70%</div>
+					<div class="weather__info-item"><i class="fa-regular fa-square"></i>давление : 1008mbar</div>
+					<div class="weather__temp-info temp">
+						<div class="temp__info">
+							<p class="temp__time">14:00</p>
+							<p class="temp__number">+12°</p>
+							<div class="temp__diagramm"></div>
+						</div>
+						<div class="temp__info">
+							<p class="temp__time">14:00</p>
+							<p class="temp__number">+12°</p>
+							<div class="temp__diagramm"></div>
+						</div>
+						<div class="temp__info">
+							<p class="temp__time">14:00</p>
+							<p class="temp__number">+12°</p>
+							<div class="temp__diagramm"></div>
+						</div>
+						<div class="temp__info">
+							<p class="temp__time">14:00</p>
+							<p class="temp__number">+12°</p>
+							<div class="temp__diagramm"></div>
+						</div>
+						<div class="temp__info">
+							<p class="temp__time">14:00</p>
+							<p class="temp__number">+12°</p>
+							<div class="temp__diagramm"></div>
+						</div>
+					</div>
+				</div>
+				<!-- </div> -->
+			</div>
+			<ul class="weather__week week">
+				<li class="week__day">
+					<span class="week__day-info">вт</span>
+					<div class="week__icon"><i class="fa-solid fa-cloud"></i></div>
+					<p class="week__temp">+17°</p>
+				</li>
+				<li class="week__day">
+					<span class="week__day-info">ср</span>
+					<div class="week__icon"><i class="fa-solid fa-cloud-showers-heavy"></i></div>
+					<p class="week__temp">+12°</p>
+				</li>
+				<li class="week__day">
+					<span class="week__day-info">чт</span>
+					<div class="week__icon"><i class="fa-solid fa-cloud-bolt"></i></div>
+					<p class="week__temp">+13°</p>
+				</li>
+				<li class="week__day">
+					<span class="week__day-info">пт</span>
+					<div class="week__icon"><i class="fa-solid fa-sun"></i></div>
+					<p class="week__temp">+18°</p>
+				</li>
+				<li class="week__day">
+					<span class="week__day-info">сб</span>
+					<div class="week__icon"><i class="fa-solid fa-sun"></i></div>
+					<p class="week__temp">+20°</p>
+				</li>
+			</ul>
+			<ul class="weather__week week week-night">
+				<li class="week__day week-night__day">
+					<span class="week__day-info">вт - ночь</span>
+					<div class="week__icon"><i class="fa-solid fa-cloud"></i></div>
+					<p class="week__temp">+17°</p>
+				</li>
+				<li class="week__day week-night__day">
+					<span class="week__day-info">ср - ночь</span>
+					<div class="week__icon"><i class="fa-solid fa-cloud-showers-heavy"></i></div>
+					<p class="week__temp">+12°</p>
+				</li>
+				<li class="week__day week-night__day">
+					<span class="week__day-info">чт - ночь</span>
+					<div class="week__icon"><i class="fa-solid fa-cloud-bolt"></i></div>
+					<p class="week__temp">+13°</p>
+				</li>
+				<li class="week__day week-night__day">
+					<span class="week__day-info">пт - ночь</span>
+					<div class="week__icon"><i class="fa-solid fa-sun"></i></div>
+					<p class="week__temp">+18°</p>
+				</li>
+				<li class="week__day week-night__day">
+					<span class="week__day-info">сб - ночь</span>
+					<div class="week__icon"><i class="fa-solid fa-sun"></i></div>
+					<p class="week__temp">+20°</p>
+				</li>
+			</ul>
+		</div>
+		<div class="weather__graph">
+			<canvas id="temperatureChart"></canvas>
+			<canvas id="temperatureChartForDay"></canvas>
+		</div>
+		<div class="weather__main-btn">main</div>
+		<div class="weather__graph-btn">graph</div>
+	</div>
+	<div class="errorWindow">
+		<p class="errorWindow__title">error 404</p>
+		<p class="errorWindow__discription">city not found</p>
+	</div>
+	<div class="loading-background">
+		<div class="loading-background__container">
+			<div class="cloud front">
+				<span class="left-front"></span>
+				<span class="right-front"></span>
+			</div>
+			<span class="sun sunshine"></span>
+			<span class="sun"></span>
+			<div class="cloud back">
+				<span class="left-back"></span>
+				<span class="right-back"></span>
+			</div>
+		</div>
+	</div>
+</div>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5/dist/chart.umd.min.js"></script>
+	<script src="https://kit.fontawesome.com/4f04e3c352.js" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
