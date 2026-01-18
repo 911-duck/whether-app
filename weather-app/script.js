@@ -23,7 +23,7 @@ searchButton.addEventListener("click", openSearchBlock)
 /*****************FETCH****************/
 
 //elements
-const apiKey = 'f13eebcc254c9c8dbf6812edb75bb47c'
+const apiKey = ''
 const searchBtn = document.querySelector('.menu__send')
 const cityInput = document.querySelector('.menu__input')
 
@@ -642,4 +642,5 @@ document.addEventListener('mousemove', e => {
 document.querySelector('.ALL').style.left = `${(window.getComputedStyle(body).width.slice(0,-2)/2-x)/8}px`
 document.querySelector('.ALL').style.top = `${(window.getComputedStyle(body).height.slice(0,-2)/2-y)/8}px`
 document.querySelector('.ALL').style.transform = `scale(0.9) perspective(1000px) rotateX(${y/(window.getComputedStyle(body).height.slice(0,-2))*-10+5}deg) rotateY(${x/(window.getComputedStyle(body).width.slice(0,-2))*20-10}deg)`
+
 })
